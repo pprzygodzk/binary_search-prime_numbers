@@ -65,7 +65,7 @@ def AKSPrimeTest(p, c):
     *************************************************************************"""
     if p < 2: # both 0 and 1 aren't prime
         return False
-    div = lambda x: 1 if x%p == 0 else 0 # checks divisibleness
+    div = lambda x: 1 if x%p == 0 else 0 # checks divisibility
     return all([div(c[i]) for i in range (1, len(c)-1)])
 
 if __name__ == '__main__':
