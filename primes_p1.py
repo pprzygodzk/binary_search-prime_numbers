@@ -79,12 +79,12 @@ def Decompose(n):
     decomposition = []
     while d*d <= n:
         if n%d == 0:
-            n /= d
+            n //= d
             decomposition.append(d)
         else:
             i += 1
             d = f[i]
-    decomposition.append(int(n))
+    decomposition.append(n)
     return decomposition
     
 
