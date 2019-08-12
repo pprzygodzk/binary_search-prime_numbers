@@ -2,8 +2,8 @@ import math
 
 def SieveofEratosthenes(n):
     """determine prime numbers from the set of natural numbers from 2 to n"""
-    a = [i for i in range(2, n+1)]
     
+    a = [i for i in range(2, n+1)]
     for i in a:
         for j in range(i*i, n+1, i):
             if j in a:
@@ -45,6 +45,7 @@ def PrimesGenerator(n):
 
 def PrimorialGenerator(n):
     """generate n primorial numbers (the product of the first n successive primes)"""
+    
     a = PrimesGenerator(n-1)
     b = [1]
     p = 1
