@@ -109,6 +109,7 @@ def AntiPrimes(n):
     """generates n antiprimes (highly composite natural numbers with more divisors than
     any smaller number has)"""
     
+    assert isinstance(n, int), "Given argument has to be integer!"
     n_i = 1
     ap = 1
     record = 0
@@ -135,6 +136,7 @@ def EmirpPrimes(n):
     
     # omits one-digit primes (they cannot be reversed) and 11
     # the least prime which can be reversed and give a different prime is 13
+    assert isinstance(n, int), "Given argument has to be integer!"
     n_i = 0
     for p in it.accumulate(it.chain([13], it.cycle([4, 2]))):
         if n_i == n:
