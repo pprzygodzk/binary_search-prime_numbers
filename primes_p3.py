@@ -25,7 +25,7 @@ def FermatsLT(p):
 
 
 def MillerRabinPT(p):
-    """checks if given p is a prime number using Miller-Rabin primarility test:
+    """checks if given p is a prime number using Miller-Rabin primality test:
     --- if p is an odd prime number of the form p = 1 + 2^s*d where d is odd,   ---
     --- then for any natural number a from <2, p-2> Miller-Rabin sequence:      ---
     ---             a^d, a^(2*d), a^(4*d), ..., a^(2^(s-1)*d)       (mod p)     ---
